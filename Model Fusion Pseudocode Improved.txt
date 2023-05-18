@@ -1,0 +1,45 @@
+Imp river.metrics As metrics
+
+model1 ← openRead(model1)
+model2 ← openRead(model2)
+model3 ← openRead(model3)
+
+metric1 ← metrics.Accuracy()
+metric2 ← metrics.Accuracy()
+metric3 ← metrics.Accuracy()
+
+Sensor_data ← {"Feature 1": 0, "Feature 2": 0, "Feature 3": 0, ... , "Feature n": 0}
+
+While True
+    {D1 : Dn} ← {S1 : Sn}
+    
+    data ← {"Feature 1": D1, "Feature 2": D2, "Feature 3": D3, ... , "Feature n": Dn}
+    data ← {Key, Value For Key, Value in data.items() If Value Is Not Null}
+    If len(data) = n Then
+        actual ← Sp
+        model1.LearnOne(data, actual) 
+        prediction ← Predict(model1, data)
+        accuracy ← Update(metric1, actual, prediction)
+
+    ElseIf ((len(data = n/2) And (("Feature 1" : "Feature n/2") in data)) Then
+        actual ← Sp
+        model2.LearnOne(data, actual)
+        prediction ← Predict(model2, data)
+        accuracy ← Update(metric2, actual, prediction)
+
+    ElseIf ((len(data = n/2) And (("Feature (n/2 + 1)" : "Feature n") in data)) Then
+        actual ← Sp
+        model3.LearnOne(data, actual)
+        prediction ← Predict(model3, data)
+        accuracy ← Update(metric3, actual, prediction)
+    Endif
+    
+    Sensor_data ← {**Sensor_data, **data}
+
+Endwhile
+
+Where
+n: number of features
+S: signal from sensor
+D: data assigned taken from sensor
+Sp: Signal that reads the data being predicted (The Feature being predicted eg: light and temp)
