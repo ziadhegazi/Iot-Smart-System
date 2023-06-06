@@ -1,0 +1,19 @@
+In here You can find the initial Raw data used before being processed and cleaned as well as ML code used to analyse the data.
+Smart Building (Folder):
+	- It consists of 51 folders, numbered, one for each room.
+	- Each room folder has 5 files, one for each sensor used.
+smartbuilding.ipynb:
+	- This is the code used for the data preprocessing and model creation.
+	- It contains data visualisation process to show how the data looks before and after cleaning.
+smartbuilding(Tidy).ipynb:
+	- It is the same as the previous file. However, its looks Tidier.
+	- It uses the cleaned data version straight away without going through the data cleaning and manipulation first.
+	- No data visualisation.
+testdata.csv:
+	- Raw data combined together.
+smart_building_cleaned.csv:
+	- Cleaned data.
+pretrained_model.py:
+	- testing pre trained models.
+trained_adaboost_model.pkl:
+	- Pretrained model.

@@ -1,0 +1,5 @@
+This folder includes The code and results of the preliminary tests done to connect arduino, RPI, and Thingsboard together.
+Temp_control (folder):
+	- The code used on the arduino side to read temp sensor reading and sends it to the RPI.
+Temp_control.py:
+	- The code used on the RPI side to send and receive data from arduino and Thingsboard.

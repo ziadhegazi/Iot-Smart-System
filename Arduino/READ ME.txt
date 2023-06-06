@@ -1,0 +1,12 @@
+The files in here are what can be used to test few things while working on the project.
+
+i2c_scanner:
+	- Used to detect any module or sensor connected that uses the i2c protocol.
+ina219_current_sensor:
+	- the basic code for the INA219 sensor that outputs current, voltage, and power.
+slave_device:
+	- What I used for the final execution of the project, which includes all the sensors.
+	- It communicates with the Master device (RPI or PC) to send the readings from sensors.
+	- Controls the fans and their speed.
+temp_pir_ldr:
+	- Basic code to test out my temperature, PIR, and LDR sensors.

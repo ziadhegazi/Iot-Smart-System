@@ -1,0 +1,5 @@
+In here you will find the code used to link the incremental learning model, sensors, and thingsboard together.
+ml_with_tb.py:
+	- The code.
+Anything that ends with ".pkl" extention:
+	- Pretrained model.

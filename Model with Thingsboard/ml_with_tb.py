@@ -15,23 +15,27 @@ metric1 = metrics.Accuracy()
 metric2 = metrics.Accuracy()
 
 # Assigning models
-model = pickle.load(open('trained_HTC_full.pkl', 'rb'))
-model_HWT = pickle.load(open('trained_HTC_HWT.pkl', 'rb'))
-model2_LTC = pickle.load(open('trained_HTC_LTC.pkl', 'rb'))
+# model = pickle.load(open('trained_ADA_HTC_full.pkl', 'rb'))
+# model_HWT = pickle.load(open('trained_ADA_HTC_HWT.pkl', 'rb'))
+# model2_LTC = pickle.load(open('trained_ADA_HTC_LTC.pkl', 'rb'))
 
 # Thingsboard platform credentials
 THINGSBOARD_HOST = 'demo.thingsboard.io'        # Change IP Address
-ACCESS_TOKEN = '<Token Here>'                      # Change Access Token
+ACCESS_TOKEN = 'ziad1234'                      # Change Access Token
 # initial data
-sensor_data = {'temperature': 0,
-               "light": 0,
-               "co2": 0,
-               "humidity": 0,
-               "weekday": 0,
-               "time": 0,
-               "pir": 0,
-               "led": 0,
-               "accuracy": 0}
+sensor_data = {
+    "temperature1": 0,
+    "temperature2": 0,
+    "light1": 0,
+    "light2": 0,
+    "humidity1": 0,
+    "humidity2": 0,
+    "weekday": 0,
+    "time": 0,
+    "pir": 0,
+    "led": 0,
+    "accuracy": 0
+    }
 
 def publishValue(client):
     INTERVAL = 1

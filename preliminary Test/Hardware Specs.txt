@@ -1,0 +1,17 @@
+Raspberry Pi 2 model B 1GB: 
+	- Quad-core Broadcom BCM2836 CPU with 1GB RAM
+	- 40 pins extended GPIO
+	- Micro SD slot
+	- 4 USB ports
+	- Full-size HDMI
+	- 4 pole stereo output and composite video port
+	- CSI camera port
+	- DSI display port
+	- Ethernet cable port
+	- Micro USB power source
+Keyboard:
+	- To be able to type on the RPI
+Mouse:
+	- To control the RPI
+Output display monitor:
+	- Through a full-size HDMI port to display the RPI screen

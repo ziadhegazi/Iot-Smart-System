@@ -1,0 +1,1 @@
+This is the DL model used on the smart building data so i would be able to compare its results with the ML model and Incremental learning model.

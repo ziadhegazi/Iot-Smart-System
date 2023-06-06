@@ -1,0 +1,11 @@
+In here you will find the codes used to create an Online learning model + Model fusion.
+incremental_model.ipynb:
+	- Code for Online learner + model fusion.
+smart_building_cleaned.csv:
+	- Cleaned full data.
+test1.csv:
+	- Cleaned First 3 features of the data.
+test2.csv:
+	- Cleaned Last 3 features of the data.
+Anything that ends with ".pkl" extention:
+	- Pretrained model.
